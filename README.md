@@ -2,6 +2,11 @@
 
 This is a repo showing a way to dynamically throttle requests using nginx 
 
+This is achieved by having nginx and a lightweight spring rest service packaged into a single container. The spring rest service assumes the responsibility of editing the nginx config and restarting the service
+
+Architecture:
+![Architecture Diagram](./doc/overview.png)
+
 ### Prerequisite 
 * Docker
 * Maven
